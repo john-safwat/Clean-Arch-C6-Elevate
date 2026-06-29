@@ -36,12 +36,18 @@ dependencies:
   cupertino_icons: ^1.0.8
   dio:
   retrofit: ^4.9.0
+  bloc:
+  flutter_bloc: ^9.1.1
+  get_it: ^9.2.1
+  pretty_dio_logger: ^1.4.0
+  injectable:
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   retrofit_generator: ^10.0.1
   build_runner: ^2.6.0
+  injectable_generator:
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your

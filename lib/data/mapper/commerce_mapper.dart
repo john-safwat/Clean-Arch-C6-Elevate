@@ -5,7 +5,9 @@ import 'package:c6_elevate_clean_arch/domain/entities/banner_entity.dart';
 import 'package:c6_elevate_clean_arch/domain/entities/category_entity.dart';
 import 'package:c6_elevate_clean_arch/domain/entities/product_entity.dart';
 import 'package:flutter/material.dart';
+import 'package:injectable/injectable.dart';
 
+@injectable
 class CommerceMapper {
   List<ProductEntity> mapProductResponseListToProductEntityList(
     List<ProductResponse> products,

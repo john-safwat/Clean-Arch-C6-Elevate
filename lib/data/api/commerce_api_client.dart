@@ -1,14 +1,17 @@
 import 'package:c6_elevate_clean_arch/data/models/categories_response.dart';
 import 'package:c6_elevate_clean_arch/data/models/products_response.dart';
 import 'package:dio/dio.dart';
+import 'package:injectable/injectable.dart';
 import 'package:retrofit/retrofit.dart';
 
 import '../../core/network/api_constants.dart' show baseUrl;
 
 part 'commerce_api_client.g.dart';
 
+@singleton
 @RestApi(baseUrl: baseUrl)
 abstract class CommerceApiClient {
+  @factoryMethod
   factory CommerceApiClient(Dio dio) = _CommerceApiClient;
 
   @GET("/api/v1/categories")

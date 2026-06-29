@@ -7,7 +7,9 @@ import 'package:c6_elevate_clean_arch/domain/entities/banner_entity.dart';
 import 'package:c6_elevate_clean_arch/domain/entities/category_entity.dart';
 import 'package:c6_elevate_clean_arch/domain/entities/product_entity.dart';
 import 'package:c6_elevate_clean_arch/domain/repo/home_repo.dart';
+import 'package:injectable/injectable.dart';
 
+@Injectable(as: HomeRepo)
 class HomeRepoImpl implements HomeRepo {
   final CommerceLocalDatasource _commerceLocalDatasource;
   final CommerceApiClient _commerceApiClient;
